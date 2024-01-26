@@ -4,13 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [env, setEnv] = useState({});
-  useEffect(() => {
-    fetch('/api/one')
-      .then((res) => res.json())
-      .then((data) => {
-        setEnv(data);
-      });
-  }, []);
+
   return (
     <>
       <h1>hello next on vercel</h1>
